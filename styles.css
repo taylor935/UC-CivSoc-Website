@@ -507,7 +507,7 @@ footer .footer-links a:hover { text-decoration: underline; }
   text-align: center;      /* center the text inside */
   padding: 2rem 1rem;      /* some spacing around the section */
   gap: 1.5rem;             /* spacing between title, paragraph, and image */
-  height: 60vh;
+  height:800px;
   background-color: white;
 }
 
@@ -523,6 +523,6 @@ footer .footer-links a:hover { text-decoration: underline; }
 }
 
 .in-progress img {
-  max-width: 80%;    /* image never wider than 80% of container */
+  max-width: 200px;    /* image never wider than 80% of container */
   height: auto;      /* maintain aspect ratio */
 }
