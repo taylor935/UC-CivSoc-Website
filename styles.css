@@ -281,6 +281,12 @@ footer .footer-links a:hover { text-decoration: underline; }
 .prev:hover,.next:hover { background-color:rgba(60,117,184,0.8); }
 
 /* ================= SLIDER ===================== */
+.slider-wrapper {
+  width: 100%;
+  overflow-x: hidden; 
+  position: relative;
+}
+
 .slider {
   width:100%; min-width:900px; overflow:hidden; margin:0 auto;
   height:var(--height,400px); background-color:white; position:relative;
@@ -382,6 +388,14 @@ footer .footer-links a:hover { text-decoration: underline; }
   letter-spacing: clamp(0.2rem,1vw,2rem);
   transform:scaleY(.8); margin-bottom:20px;
   text-transform:uppercase; word-break: break-word; will-change: transform;
+}
+.exec h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  letter-spacing: 0.6rem;
+  max-width: 90vw;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 .team-pair { display:flex; justify-content: space-around; flex-wrap: wrap; margin:40px 0; }
 .exec-row { display:flex; flex-direction:column; align-items:center; gap:15px; max-width:90vw; }
