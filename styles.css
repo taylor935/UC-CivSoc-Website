@@ -279,6 +279,11 @@ footer .footer-links a:hover { text-decoration: underline; }
 }
 .prev { left:20px; } .next { right:20px; }
 .prev:hover,.next:hover { background-color:rgba(60,117,184,0.8); }
+@media (max-width: 600px) {
+  .welcome-title {
+    letter-spacing: 0.5rem; /* smaller spacing for mobile */
+  }
+}
 
 /* ================= SLIDER ===================== */
 .slider-wrapper {
@@ -310,7 +315,12 @@ footer .footer-links a:hover { text-decoration: underline; }
   font-weight:bold; font-size:1.2rem; color:black; display:flex;
   align-items:center; justify-content:center; height:100%; width:100%; text-align:center; margin:0;
 }
-
+/* Smaller screens */
+@media (max-width: 600px) {
+  .slider .item p {
+    font-size: 0.9rem; /* smaller for mobile */
+  }
+}
 /* ================= WHAT WE DO (BANDS) ================= */
 #what-we-do {
   text-align:center; overflow:hidden; padding:0;
@@ -391,7 +401,7 @@ footer .footer-links a:hover { text-decoration: underline; }
 }
 .exec h2 {
   font-size: clamp(1.5rem, 5vw, 3rem);
-  letter-spacing: 0.6rem;
+  letter-spacing: normal;
   max-width: 90vw;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -487,3 +497,32 @@ footer .footer-links a:hover { text-decoration: underline; }
 
 #section-2, #section-2 * { color: #cbcbcb; }
 #section-1, #section-1 *, #section-3, #section-3 * { color: #333333; }
+
+/*======Merch=======*/
+.in-progress {
+  display: flex;
+  flex-direction: column;  /* stack items vertically */
+  align-items: center;     /* center horizontally */
+  justify-content: center; /* center vertically if you want extra spacing */
+  text-align: center;      /* center the text inside */
+  padding: 2rem 1rem;      /* some spacing around the section */
+  gap: 1.5rem;             /* spacing between title, paragraph, and image */
+  height: 60vh;
+  background-color: white;
+}
+
+.in-progress h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* scales between 2rem and 3rem */
+  margin: 0;
+}
+
+.in-progress p {
+  font-size: clamp(1rem, 3vw, 1.5rem); /* slightly smaller, responsive */
+  margin: 0;
+  color: #333;
+}
+
+.in-progress img {
+  max-width: 80%;    /* image never wider than 80% of container */
+  height: auto;      /* maintain aspect ratio */
+}
